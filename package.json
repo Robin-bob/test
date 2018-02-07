@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "grunt": "~0.4.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-postcss": "^0.9.0",
+    "jshint-stylish": "latest"
+  }
+}
