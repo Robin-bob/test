@@ -1,0 +1,338 @@
+@font-face {
+font-family: 'Neo Sans Pro';
+src: url('../fonts/NeoSansPro-Light.eot');
+src: url('../fonts/NeoSansPro-Light.eot?#iefix') format('embedded-opentype'),
+url('../fonts/NeoSansPro-Light.woff') format('woff'),
+url('../fonts/NeoSansPro-Light.ttf') format('truetype');
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: 'Neo Sans Pro';
+src: url('../fonts/NeoSansPro-LightItalic.eot');
+src: url('../fonts/NeoSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+url('../fonts/NeoSansPro-LightItalic.woff') format('woff'),
+url('../fonts/NeoSansPro-LightItalic.ttf') format('truetype');
+font-weight: 300;
+font-style: italic;
+}
+@font-face {
+font-family: 'Neo Sans Pro';
+src: url('../fonts/NeoSansPro-Regular.eot');
+src: url('../fonts/NeoSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/NeoSansPro-Regular.woff') format('woff'),
+url('../fonts/NeoSansPro-Regular.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: 'Neo Sans Pro';
+src: url('../fonts/NeoSansPro-Italic.eot');
+src: url('../fonts/NeoSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+url('../fonts/NeoSansPro-Italic.woff') format('woff'),
+url('../fonts/NeoSansPro-Italic.ttf') format('truetype');
+font-weight: 500;
+font-style: italic;
+}
+@font-face {
+font-family: 'Neo Sans Pro';
+src: url('../fonts/NeoSansPro-Medium.eot');
+src: url('../fonts/NeoSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/NeoSansPro-Medium.woff') format('woff'),
+url('../fonts/NeoSansPro-Medium.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}
+
+body {
+	font-family: Neo Sans Pro , sans-serif;
+	font-weight: normal;
+	line-height: 1.2; 
+}
+h1{
+	font-weight: bold;
+}
+header {
+	position: relative;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+	max-width:1170px;
+	margin:0 auto;
+	position: relative;
+} 
+.slider { 
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 100%;
+	height: 800px;
+	text-align: center;
+	align-items: flex-end;
+}
+.slider > input {
+	display: none;
+}
+.slider > input + label {
+	position: relative;
+	display: flex;
+	margin-right:30px;
+	margin-bottom: 3%;
+	z-index: 100;
+	cursor: pointer;
+	box-sizing: border-box;	
+}
+.slider .slides {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border:1px solid black;
+	background-color: white;
+	box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.26);
+}
+.slider .slider-arrow{
+	height: 15px;
+}
+.slider > input:checked + label.slides {
+    background: rgb(255, 32, 54);
+    border:none;
+   }
+ .slider > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+.slider div.text {
+	position: absolute;
+	margin-top: 325px;
+	top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    text-align: right;
+}
+.slider div h1 {
+	font-size: 50px;
+	text-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+}
+.slider div p{
+	font-size: 27px;
+	margin-left:770px;
+	font-weight: lighter;
+	font-style: italic;
+} 
+.slider img {
+	width: 100%;
+}
+.heading{ 
+	position: absolute;
+	top:0
+	bottom:0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+ }
+.main-menu {
+	float: left;
+	margin-left:270px;	
+}
+.main-menu li {
+	float: left;
+	display: block;
+	height: 30px;
+	width: 150px;
+	border-left: 1px solid rgb(255,32,54);
+	text-align: right;
+	line-height: 30px;
+	padding-right: 22px;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+.main-menu li:active, .language li:active {
+	height: 50px;
+	background: rgb(255,32,54); 
+	line-height: 50px;
+	margin-top: 0;
+	margin-right: -1px;
+	color: white;
+	line-height: 50px;
+	color: white;
+}
+.ural-logo {
+	float: left;
+	margin-top: 5px;
+}
+.language {
+	float: right;
+}
+.language li{
+	float: left;
+	display: block;
+	width: 50px;
+	height: 30px;
+	margin-top: 10px;
+	border-left: 1px solid rgb(255,32,54);
+	text-align: center;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+.about {
+	background: url(../images/about_icon.png) no-repeat  18px 7px  ;
+}
+.contacts {
+	background: url(../images/contact_icon.png) no-repeat  18px 7px;
+}
+.find-us {
+	background: url(../images/find_icon.png) no-repeat  18px 7px;
+}
+hr {
+	height:10px;
+	width: 180px;
+	background: rgb(255,32,54);
+	border: none;
+	margin: 55px 0 55px 990px ;
+	box-shadow:-1px 3px 4px 1px rgba(255, 121, 32, 0.16);
+}
+.about-company {
+	height: 490px;	
+	text-align: left;
+	
+}
+.about-company .container {
+	margin-top: 80px;
+}
+.about-company h1 {
+	font-size: 36px;
+
+}
+.about-company p {
+	margin-bottom: 35px;
+	font-size: 18px;
+}
+.about-company hr {
+	margin:63px 990px 80px 0;
+}
+.shipping {
+	background: url(../images/ship.jpeg) no-repeat center top / cover;
+	height: 680px;
+	font-size: 24px;
+	text-align: right;	
+}
+
+.shipping p {
+	margin-left:650px;
+	padding-top:250px;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.46);
+}
+.shipping hr {
+	margin-top: 60px;
+}
+
+.tomatoes {
+	background: url(../images/tomatoes.jpeg) no-repeat top center / cover;
+	height: 130px;
+}
+.mandarins {
+	background: url(../images/mandarins.jpeg) no-repeat top center / cover;
+	height: 130px;
+}
+.oranges {
+	background: url(../images/oranges.jpeg) no-repeat top center / cover;
+	height: 130px;
+}
+.lemons {
+	background: url(../images/lemons.jpeg) no-repeat top center / cover;
+	height: 130px;
+}
+.grape {
+	background: url(../images/grapes.jpeg) no-repeat top center / cover;
+	height: 130px;
+}
+.pears {
+	background: url(../images/pears.jpeg) no-repeat top center / cover;
+	height: 130px;
+}
+.fruits p{
+	font-size: 36px;
+	text-align: right;
+	line-height: 130px;
+	color: white;
+	text-shadow: -1px 3px 27px rgba(0, 0, 0, 0.26); 
+
+}
+.statistics {
+	position: relative;
+}
+.statistics_info {
+	position: absolute;
+	top:195px;
+	height: 383px;
+	width: 683px;
+	padding: 90px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,0.7);
+	box-shadow: -1px 3px 19px 1px rgba(0, 0, 0, 0.26); 
+	text-align: left;
+}
+.statistics_info p {
+	font-size: 36px;
+	color: black;
+	font-weight: bold;
+}
+
+.about-mek img{
+	position: absolute;
+	top: 131px;
+}
+.about-mek h1 {
+	text-align: right;
+	font-size: 36px;
+	padding-top: 131px;
+}
+.about-mek p{
+	font-size: 18px;
+}
+.about-mek hr {
+	margin-top: 80px;
+	margin-bottom: 120px;
+}
+.contact-info{
+	margin-top: 112px;
+}
+.contact-info h1 , .map h1 {
+	font-size: 36px;	
+}
+.contact-info hr {
+	margin: 75px 0; 
+} 
+.contact-info address , .map address {
+	font-size: 24px;
+	font-weight: bold;
+}
+.mail {
+	margin-top: 35px;
+	padding-bottom: 90px; 
+}
+.map {
+	padding-top:80px; 
+	background: url(../images/map.jpeg) no-repeat center top / cover;
+	height: 650px;
+}
+.map h1 {
+	margin-bottom: 55px;
+}
+.underline {
+	text-decoration: underline;
+}
+.normal {
+	font-weight: normal; 
+}
